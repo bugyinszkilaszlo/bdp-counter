@@ -1,0 +1,24 @@
+{
+  "name": "bdp-counter",
+  "version": "0.1.0",
+  "description": "Simple counter app for the Busy Dad Program workout.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugyinszkilaszlo/bdp-counter.git"
+  },
+  "author": "Laszlo Bugyinszki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bugyinszkilaszlo/bdp-counter/issues"
+  },
+  "homepage": "https://github.com/bugyinszkilaszlo/bdp-counter#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
