@@ -1,0 +1,25 @@
+.Counter {
+  text-align: center;
+
+  > div {
+    margin: 7vh 0;
+    font-family: 'Chivo Mono', monospace;
+  }
+  .count {
+    font-size: 10rem;
+    opacity: 0.5;
+  }
+  .time {
+    font-size: 40rem;
+    font-weight: 700;
+  }
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 16vh;
+    padding: 3rem;
+    font-size: 10rem;
+    font-weight: 900;
+    border: none;
+  }
+}
