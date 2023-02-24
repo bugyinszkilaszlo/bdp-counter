@@ -2,18 +2,90 @@ import { useEffect, useState } from 'react';
 import * as style from './Counter.module.scss';
 
 const WORKOUTS = {
-  'six-count': {
-    count: 50,
-    time: 20,
+  level1A: {
+    'six-count': {
+      count: 1,
+      time: 20,
+    },
+    'navy-seal': {
+      count: 1,
+      time: 20,
+    },
   },
-  'navy-seal': {
-    count: 20,
-    time: 20,
+  level1B: {
+    'six-count': {
+      count: 50,
+      time: 20,
+    },
+    'navy-seal': {
+      count: 20,
+      time: 20,
+    },
+  },
+  level1C: {
+    'six-count': {
+      count: 100,
+      time: 20,
+    },
+    'navy-seal': {
+      count: 40,
+      time: 20,
+    },
+  },
+  level1D: {
+    'six-count': {
+      count: 150,
+      time: 20,
+    },
+    'navy-seal': {
+      count: 60,
+      time: 20,
+    },
+  },
+  level2: {
+    'six-count': {
+      count: 200,
+      time: 20,
+    },
+    'navy-seal': {
+      count: 80,
+      time: 20,
+    },
+  },
+  level3: {
+    'six-count': {
+      count: 250,
+      time: 20,
+    },
+    'navy-seal': {
+      count: 100,
+      time: 20,
+    },
+  },
+  level4: {
+    'six-count': {
+      count: 275,
+      time: 20,
+    },
+    'navy-seal': {
+      count: 120,
+      time: 20,
+    },
+  },
+  graduation: {
+    'six-count': {
+      count: 325,
+      time: 20,
+    },
+    'navy-seal': {
+      count: 150,
+      time: 20,
+    },
   },
 };
 
 export function Counter({ type } = props) {
-  const workout = WORKOUTS[type];
+  const workout = WORKOUTS.level1B[type];
   const interval = (workout.time * 60) / workout.count;
 
   const [currentCount, setCurrentCount] = useState(1);
