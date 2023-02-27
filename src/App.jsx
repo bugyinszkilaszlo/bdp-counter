@@ -9,8 +9,8 @@ export function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<Home />} path='/' />
-          <Route element={<Counter type='six-count' />} path='/six-count' />
-          <Route element={<Counter type='navy-seal' />} path='/navy-seal' />
+          <Route element={<Counter type='six-count' />} path='six-count' />
+          <Route element={<Counter type='navy-seal' />} path='navy-seal' />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom';
 import * as style from './Home.module.scss';
 
 export function Home() {
   return (
     <div className={style.Home}>
-      <a href='/six-count'>SIX COUNT</a>
+      <Link to='six-count'>SIX COUNT</Link>
       <br />
-      <a href='/navy-seal'>NAVY SEAL</a>
+      <Link to='navy-seal'>NAVY SEAL</Link>
     </div>
   );
 }
