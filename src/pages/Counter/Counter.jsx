@@ -82,10 +82,20 @@ const WORKOUTS = {
       time: 20,
     },
   },
+  custom: {
+    'six-count': {
+      count: 60,
+      time: 20,
+    },
+    'navy-seal': {
+      count: 25,
+      time: 20,
+    },
+  },
 };
 
 export function Counter({ type } = props) {
-  const workout = WORKOUTS.level1B[type];
+  const workout = WORKOUTS.custom[type];
   const interval = (workout.time * 60) / workout.count;
 
   const [currentCount, setCurrentCount] = useState(1);
