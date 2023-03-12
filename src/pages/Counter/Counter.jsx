@@ -84,11 +84,11 @@ const WORKOUTS = {
   },
   custom: {
     'six-count': {
-      count: 60,
+      count: 64,
       time: 20,
     },
     'navy-seal': {
-      count: 25,
+      count: 27,
       time: 20,
     },
   },
